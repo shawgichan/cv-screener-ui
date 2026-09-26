@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { SAMPLE_JD, MAX_JD_CHARS } from '../lib/constants';
+import { MAX_JD_CHARS } from '../lib/constants';
 
 interface UploadViewProps {
   jd: string;
@@ -75,7 +75,6 @@ export default function UploadView({ jd, setJd, files, onAddFiles, onRemoveFile,
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-[16px] font-semibold text-on-surface">Paste job description</h2>
               <div className="flex items-center gap-2">
-                <button className="bg-surface-container text-on-surface-variant px-3 py-1 rounded text-[12px] font-medium hover:bg-surface-container-high transition-colors" onClick={() => setJd(SAMPLE_JD)}>Sample JD</button>
                 <button className="text-on-surface-variant text-[12px] font-medium hover:text-on-surface transition-colors" onClick={() => setJd("")}>Clear</button>
               </div>
             </div>
